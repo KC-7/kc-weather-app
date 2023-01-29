@@ -1,6 +1,6 @@
-KC Weather App was designed to allow the user to enter multiple different locations and compare realtime weather data. 
+[KC Weather App](https://kc-7.github.io/kc-weather-app/) was designed to allow the user to enter multiple different locations and compare realtime weather data. 
 
-Site Live Link: 
+Site Live Link: https://kc-7.github.io/kc-weather-app/
 
 The app was built to refresh myself on core JavaScript concepts. The site is structed with HTML and styled using CSS. 
 
