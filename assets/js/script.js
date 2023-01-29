@@ -32,30 +32,34 @@ function getWeather(e) {
             .then(function(data) {
               // Log the weather data to the console
               console.log(data);
+
               // Create a new table row for each city
               const row = document.createElement("tr");
-              // Create a cell for the city name
+
+              // Create a new cell in the row for City
               const cityCell = document.createElement("td");
-              // Display city in uppercase
               cityCell.textContent = city.toUpperCase();
-              // Create a cell for the temperature
+              row.appendChild(cityCell);              
+              // Create a new cell in the row for Temperature
               const tempCell = document.createElement("td");
-              // Rounds result to one decimal point
-              tempCell.textContent = data.main.temp.toFixed(1);
-              // Create a cell for the humidity
+              tempCell.textContent = data.main.temp.toFixed(1) + " °C";
+              row.appendChild(tempCell);              
+              // Create a new cell in the row for Feels Like Temperature
+              const feelsLikeCell = document.createElement("td");
+              feelsLikeCell.textContent = data.main.feels_like.toFixed(1) + " °C";
+              row.appendChild(feelsLikeCell);              
+              // Create a new cell in the row for Humidity
               const humidityCell = document.createElement("td");
-              humidityCell.textContent = data.main.humidity;
-              // Create a cell for the wind speed
-              const windCell = document.createElement("td");
-              // Rounds result to nearest whole number
-              windCell.textContent = Math.round(data.wind.speed);
-              // Append the cells to the row
-              row.appendChild(cityCell);
-              row.appendChild(tempCell);
+              humidityCell.textContent = data.main.humidity + "% rH";
               row.appendChild(humidityCell);
+              // Create a new cell in the row for Wind Speed
+              const windCell = document.createElement("td");
+              windCell.textContent = Math.round(data.wind.speed) + " m/s";
               row.appendChild(windCell);
+
               // Get the table element
               const weatherTable = document.querySelector("#weather-table");
+
               // Append the row to the table
               weatherTable.appendChild(row);
             })
@@ -65,4 +69,3 @@ function getWeather(e) {
         });
     });
 }
-  
