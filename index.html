@@ -10,7 +10,25 @@
 </head>
 
 <body>
-    Hello World
+    <form id="city-form">
+        <label for="city-input">Enter City Names:</label>
+        <input type="text" id="city-input" placeholder="e.g. London, Paris, New York">
+        <button type="submit">Compare</button>
+      </form>
+      <table id="weather-table">
+        <thead>
+          <tr>
+            <th>City</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>Wind Speed</th>
+          </tr>
+        </thead>
+        <tbody id="weather-data">
+          <!-- Weather data will be inserted here -->
+        </tbody>
+      </table>
+      <script src="assets/js/script.js"></script>
 </body>
 
 </html>

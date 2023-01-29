@@ -1,4 +1,43 @@
 body {
-    font-size: x-large;
-    color: red;
-}
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  #city-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  #city-form label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  #city-form input {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  #city-form button {
+    padding: 10px 20px;
+  }
+  
+  #weather-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  #weather-table th,
+  #weather-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  #weather-table th {
+    background-color: #f2f2f2;
+  }
