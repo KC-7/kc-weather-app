@@ -2,34 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KC Weather App</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KC Weather App</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <form id="city-form">
-        <label for="city-input">Enter City Names:</label>
-        <input type="text" id="city-input" placeholder="e.g. London, Paris, New York">
-        <button type="submit">Compare</button>
-      </form>
-      <table id="weather-table">
-        <thead>
-          <tr>
-            <th>City</th>
-            <th>Temperature</th>
-            <th>Feels Like</th>
-            <th>Humidity</th>
-            <th>Wind Speed</th>
-          </tr>
-        </thead>
-        <tbody id="weather-data">
-          <!-- Weather data will be inserted here -->
-        </tbody>
-      </table>
-      <script src="assets/js/script.js"></script>
+  
+  <header>
+    <h1>KC Weather App</h1>
+  </header>
+
+  <form id="city-form">
+    <label for="city-input">Enter City Names:</label>
+    <input type="text" id="city-input" placeholder="e.g. London, Paris, New York">
+    <button type="submit">Compare</button>
+  </form>
+
+  <table id="weather-table">
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Temperature</th>
+        <th>Feels Like</th>
+        <th>Humidity</th>
+        <th>Wind Speed</th>
+      </tr>
+    </thead>
+    <tbody id="weather-data">
+      <!-- Weather data will be inserted here -->
+    </tbody>
+  </table>
+
+  <footer>
+    <p>&copy; 2023 KC Weather App</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
