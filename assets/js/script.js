@@ -36,16 +36,19 @@ function getWeather(e) {
               const row = document.createElement("tr");
               // Create a cell for the city name
               const cityCell = document.createElement("td");
-              cityCell.textContent = city;
+              // Display city in uppercase
+              cityCell.textContent = city.toUpperCase();
               // Create a cell for the temperature
               const tempCell = document.createElement("td");
-              tempCell.textContent = data.main.temp;
+              // Rounds result to one decimal point
+              tempCell.textContent = data.main.temp.toFixed(1);
               // Create a cell for the humidity
               const humidityCell = document.createElement("td");
               humidityCell.textContent = data.main.humidity;
               // Create a cell for the wind speed
               const windCell = document.createElement("td");
-              windCell.textContent = data.wind.speed;
+              // Rounds result to nearest whole number
+              windCell.textContent = Math.round(data.wind.speed);
               // Append the cells to the row
               row.appendChild(cityCell);
               row.appendChild(tempCell);
