@@ -118,6 +118,30 @@ footer p {
 
 
 @media only screen and (max-width: 420px) {
+  body {
+    padding: 10px;
+  }
+  
+  header {
+    padding: 10px;
+  }
+
+  #city-form {
+    padding: 5px;
+    margin-top: 15px;
+  }
+  
+  #city-form label {
+    margin: 0;
+  }
+
+  #city-form input,
+  #city-form button {
+    border: 0;
+    margin: 5px 0;
+    padding: 5px 0;
+  }
+
   #weather-table {
     font-size: 0.8em;
   }
@@ -125,6 +149,10 @@ footer p {
   #weather-table th,
   #weather-table td {
     padding: 5px;
+  }
+
+  footer {
+    font-size: smaller;
   }
 }
 
